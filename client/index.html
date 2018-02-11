@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timestamp Converter</title>
+</head>
+<body>
+	
+	<div>
+		<h2>Enter a date</h2>
+		<input type="date" id="normal">
+		<button onclick="handleNormal()">Submit Normal Date</button>
+	</div>
+	<h2>or</h2>
+	<div>
+		<h2>Enter a Unix timestamp</h2>
+		<input type="text" id="unix">
+		<button onclick="handleUnix()">Submit Unix Timestamp</button>
+	</div>
+	<div>
+		<h2>See your results below</h2>
+		<p>Normal Date: <span id="normal-result"></span></p>
+		<p>Unix Time: <span id="unix-result"></span></p>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+</body>
+</html>
